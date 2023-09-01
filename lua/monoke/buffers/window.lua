@@ -25,8 +25,6 @@ end
 local M = {}
 
 M.setup = function()
-  config.setup_defaults()
-
   setup_buffer()
   setup_window()
 

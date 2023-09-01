@@ -17,4 +17,12 @@ M.get_options = function()
  return options
 end
 
+M.update_options = function(config)
+  options.width = config.width
+  options.height = config.height
+
+  options.col = (api.nvim_get_option('columns') - options.width) / 2
+  options.row = (api.nvim_get_option('lines') - options.height) / 2
+end
+
 return M

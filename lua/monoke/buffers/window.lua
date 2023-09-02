@@ -7,7 +7,7 @@ local buf, win
 
 local update_buffer_content = function()
   table.build()
-  api.nvim_buf_set_lines(buf, 0, -1, false, table.get_all_data())
+  api.nvim_buf_set_lines(buf, 0, -1, false, table.get_content())
 end
 
 local setup_buffer = function()

@@ -1,3 +1,9 @@
 local commands = require('monoke.commands')
 
-commands.setup()
+local M = {}
+
+M.setup = function()
+  commands.setup()
+end
+
+return M

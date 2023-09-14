@@ -5,6 +5,9 @@ This plugin is a working in progress
 ```lua
 -- Packer
 use('kesleymartins/monoke.nvim')
+
+-- Lazy
+{ 'kesleymartins/monoke.nvim' }
 ```
 
 ### Setup
